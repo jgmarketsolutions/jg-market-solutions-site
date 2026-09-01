@@ -4,450 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JG Market Solutions — Social Media Marketing & Advertising for Businesses Everywhere</title>
-<meta name="description" content="Social media marketing and advertising for businesses everywhere. Ad creative, campaign management, and weekly reporting, handled personally, start to finish. $350/month flat.">
+<meta name="description" content="Social media marketing and advertising for businesses everywhere. Ad creative, campaign management, and constant optimization, handled personally, start to finish. $350/month flat.">
 <meta property="og:title" content="JG Market Solutions">
 <meta property="og:description" content="Social media marketing and advertising for businesses everywhere. Handled personally, start to finish.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/logo-gold.png">
+<link rel="canonical" href="https://www.jgmarketsolutions.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --navy: #0e1c33;
-    --navy-deep: #081120;
-    --navy-mid: #16273f;
-    --brass: #c69a5c;
-    --brass-light: #e2c393;
-    --cream: #faf8f4;
-    --white: #ffffff;
-    --ink: #182033;
-    --muted: #6f7789;
-    --muted-light: rgba(250,248,244,0.68);
-    --border: rgba(198,154,92,0.28);
-    --border-soft: rgba(14,28,51,0.08);
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Inter', sans-serif;
-    background: var(--cream);
-    color: var(--ink);
-    line-height: 1.7;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  h1, h2, h3 { font-family: 'Playfair Display', serif; letter-spacing: -0.02em; color: var(--navy); }
-
-  a { color: inherit; }
-
-  img { max-width: 100%; display: block; }
-
-  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 6%; }
-
-  .eyebrow {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--brass);
-    margin-bottom: 18px;
-  }
-
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 15px 30px;
-    border-radius: 3px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease, background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  }
-  .btn-primary {
-    background: var(--brass); color: var(--navy-deep); border: 1px solid var(--brass);
-    box-shadow: 0 8px 24px -8px rgba(198,154,92,0.55), 0 2px 6px rgba(8,17,32,0.15);
-  }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -8px rgba(198,154,92,0.6), 0 4px 10px rgba(8,17,32,0.2); }
-  .btn-primary:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
-  .btn-ghost {
-    background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.35);
-  }
-  .btn-ghost:hover { border-color: var(--brass-light); color: var(--brass-light); transform: translateY(-2px); }
-  .btn-ghost:focus-visible { outline: 2px solid var(--brass-light); outline-offset: 3px; }
-
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    background: rgba(250,248,244,0.92);
-    backdrop-filter: blur(10px);
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 0 6%;
-    height: 76px;
-    border-bottom: 1px solid var(--border-soft);
-  }
-  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .nav-logo img { height: 58px; width: 58px; object-fit: contain; filter: drop-shadow(0 2px 5px rgba(14,28,51,0.28)); }
-  .nav-logo-text { color: var(--navy); font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; letter-spacing: 0.01em; line-height: 1.2; }
-  .nav-links { display: flex; align-items: center; gap: 34px; list-style: none; }
-  .nav-links a { color: var(--ink); text-decoration: none; font-size: 13px; letter-spacing: 0.04em; font-weight: 500; position: relative; padding-bottom: 4px; transition: color 0.2s ease; }
-  .nav-links a::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: var(--brass); transition: width 0.3s ease; }
-  .nav-links a:hover { color: var(--navy); }
-  .nav-links a:hover::after { width: 100%; }
-  .nav-cta {
-    background: var(--navy); border: 1px solid var(--navy); color: var(--white);
-    padding: 10px 22px; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
-    font-family: 'Inter', sans-serif; font-weight: 600; cursor: pointer;
-    text-decoration: none; border-radius: 3px; transition: background 0.25s ease, transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
-  }
-  .nav-cta:hover { background: var(--navy-mid); transform: translateY(-2px); }
-  .nav-cta:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px; }
-  .nav-toggle { display: none; }
-
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    background: var(--navy-deep);
-    display: flex; align-items: center;
-    padding: 96px 6% 60px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 60% 50% at 78% 20%, rgba(198,154,92,0.16) 0%, transparent 60%),
-      radial-gradient(ellipse 50% 60% at 5% 90%, rgba(22,39,63,0.9) 0%, transparent 55%),
-      linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 70%);
-  }
-  .hero::after {
-    content: '';
-    position: absolute; inset: 0;
-    opacity: 0.5;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-  .hero-watermark {
-    position: absolute; top: 50%; right: -6%;
-    width: min(60vw, 820px);
-    transform: translateY(-50%);
-    opacity: 0.07;
-    z-index: 0;
-    pointer-events: none;
-  }
-  .hero-inner {
-    position: relative; z-index: 1;
-    max-width: 780px;
-  }
-  .hero h1 {
-    color: var(--white);
-    font-size: clamp(38px, 5.4vw, 64px);
-    font-weight: 600;
-    line-height: 1.12;
-    margin-bottom: 24px;
-  }
-  .hero h1 em { color: var(--brass-light); font-style: italic; }
-  .hero p.lede {
-    color: var(--muted-light);
-    font-size: 18px;
-    max-width: 560px;
-    margin-bottom: 40px;
-  }
-  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 72px; }
-
-  .stat-strip {
-    position: relative; z-index: 1;
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    overflow: hidden;
-    max-width: 780px;
-  }
-  .stat-cell { background: rgba(255,255,255,0.03); padding: 24px 22px; }
-  .stat-num { font-family: 'Playfair Display', serif; color: var(--brass-light); font-size: clamp(22px, 3vw, 30px); font-weight: 600; margin-bottom: 4px; }
-  .stat-label { color: var(--muted-light); font-size: 12.5px; letter-spacing: 0.03em; }
-  .stat-caption { color: rgba(250,248,244,0.45); font-size: 12.5px; margin-top: 14px; max-width: 780px; }
-
-  /* SECTION SHARED */
-  section { padding: 110px 0; position: relative; }
-  .section-title { font-size: clamp(28px, 4vw, 42px); font-weight: 600; line-height: 1.2; margin-bottom: 18px; }
-  .section-lede { color: var(--muted); font-size: 16.5px; max-width: 620px; margin-bottom: 56px; }
-  .section-head { max-width: 700px; }
-
-  /* WHAT I DO */
-  .services-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
-  }
-  .service-card {
-    background: var(--white);
-    border: 1px solid var(--border-soft);
-    border-radius: 8px;
-    padding: 32px 28px;
-    box-shadow: 0 1px 2px rgba(14,28,51,0.04), 0 12px 28px -18px rgba(14,28,51,0.18);
-    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease, border-color 0.3s ease;
-  }
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1px 2px rgba(14,28,51,0.06), 0 24px 40px -20px rgba(14,28,51,0.28);
-    border-color: var(--border);
-  }
-  .service-num { font-family: 'Playfair Display', serif; color: var(--brass); font-size: 14px; font-weight: 600; letter-spacing: 0.1em; margin-bottom: 14px; }
-  .service-card h3 { font-size: 19px; margin-bottom: 10px; }
-  .service-card p { color: var(--muted); font-size: 14.5px; }
-
-  /* WHO I WORK WITH */
-  .who-section { background: var(--navy); }
-  .who-section .section-title, .who-section .eyebrow { color: var(--white); }
-  .who-section .eyebrow { color: var(--brass-light); }
-  .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 44px; }
-  .who-chip {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 6px;
-    padding: 18px 20px;
-    color: var(--muted-light);
-    font-size: 14.5px;
-    transition: border-color 0.3s ease, background 0.3s ease, transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
-  }
-  .who-chip:hover { border-color: var(--border); background: rgba(198,154,92,0.06); transform: translateY(-2px); }
-  .who-location { color: var(--muted-light); font-size: 15px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 28px; }
-  .who-location strong { color: var(--brass-light); font-weight: 600; }
-
-  /* PROCESS */
-  .process-list { counter-reset: step; }
-  .process-item {
-    display: grid; grid-template-columns: 90px 1fr; gap: 28px;
-    padding: 32px 0;
-    border-bottom: 1px solid var(--border-soft);
-  }
-  .process-item:first-child { padding-top: 0; }
-  .process-item:last-child { border-bottom: none; }
-  .process-step { font-family: 'Playfair Display', serif; font-size: 40px; color: var(--brass); font-weight: 600; line-height: 1; }
-  .process-item h3 { font-size: 20px; margin-bottom: 8px; }
-  .process-item p { color: var(--muted); font-size: 15px; max-width: 560px; }
-
-  /* PRICING */
-  .pricing-section { background: var(--white); }
-  .pricing-top { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; margin-bottom: 60px; align-items: start; }
-  .pricing-top p { color: var(--muted); font-size: 15.5px; margin-bottom: 16px; }
-  .pricing-top p:last-child { margin-bottom: 0; }
-  .pricing-highlight {
-    background: var(--cream);
-    border: 1px solid var(--border-soft);
-    border-radius: 8px;
-    padding: 28px;
-  }
-  .pricing-highlight .desc { color: var(--muted); font-size: 14px; margin-top: 10px; }
-
-  .tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .tier-card {
-    border: 1px solid var(--border-soft);
-    border-radius: 8px;
-    padding: 30px 26px;
-    position: relative;
-    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.4s ease, border-color 0.3s ease;
-  }
-  .tier-card:hover { transform: translateY(-5px); box-shadow: 0 20px 36px -20px rgba(14,28,51,0.25); }
-  .tier-card.featured { background: var(--navy); border-color: var(--navy); }
-  .tier-card.featured * { color: var(--white); }
-  .tier-tag {
-    position: absolute; top: -12px; right: 22px;
-    background: var(--brass); color: var(--navy-deep);
-    font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
-    padding: 5px 12px; border-radius: 20px;
-  }
-  .tier-name { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
-  .tier-card.featured .tier-name { color: var(--brass-light); }
-  .tier-price { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
-  .tier-price span { font-size: 14px; font-weight: 400; color: var(--muted); font-family: 'Inter', sans-serif; }
-  .tier-sub { font-size: 13.5px; color: var(--muted); margin-bottom: 18px; }
-  .tier-save { font-size: 13px; color: var(--brass); font-weight: 600; }
-  .tier-card.featured .tier-save { color: var(--brass-light); }
-  .pricing-footnote { color: var(--muted); font-size: 13px; margin-top: 32px; }
-
-  /* RESULTS */
-  .story-card {
-    display: flex; align-items: flex-start; gap: 48px;
-    background: var(--white);
-    border: 1px solid var(--border-soft);
-    border-radius: 8px;
-    padding: 40px 44px;
-    box-shadow: 0 1px 2px rgba(14,28,51,0.04), 0 12px 28px -18px rgba(14,28,51,0.18);
-    flex-wrap: wrap;
-  }
-  .story-info { display: flex; align-items: center; gap: 48px; flex: 1 1 420px; flex-wrap: wrap; }
-  .story-logo { flex: 0 0 auto; }
-  .story-logo img { width: 180px; transition: opacity 0.25s ease; }
-  .story-logo a:hover img { opacity: 0.72; }
-  .story-body { flex: 1 1 240px; }
-  .story-name { font-family: 'Playfair Display', serif; font-size: 21px; font-weight: 600; color: var(--navy); }
-  .story-location { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
-  .story-stats { display: flex; gap: 44px; flex-wrap: wrap; }
-  .story-stat-num { display: block; font-family: 'Playfair Display', serif; color: var(--brass); font-size: 21px; font-weight: 600; }
-  .story-stat-label { color: var(--muted); font-size: 12.5px; }
-  .story-note { color: var(--muted); font-size: 13.5px; margin-top: 28px; font-style: italic; }
-
-  .story-gallery { position: relative; flex: 0 0 auto; width: 190px; height: 210px; margin-left: auto; }
-  .story-gallery figure {
-    position: absolute; top: 6px; width: 96px;
-    border-radius: 10px; overflow: hidden;
-    border: 3px solid var(--white);
-    box-shadow: 0 10px 24px -10px rgba(14,28,51,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .story-gallery figure:hover { z-index: 9 !important; box-shadow: 0 16px 30px -10px rgba(14,28,51,0.5); }
-  .story-gallery figure:nth-child(1) { left: 0; top: 16px; transform: rotate(-9deg); z-index: 1; }
-  .story-gallery figure:nth-child(2) { left: 46px; top: 0; transform: rotate(-1deg); z-index: 2; }
-  .story-gallery figure:nth-child(3) { left: 92px; top: 16px; transform: rotate(9deg); z-index: 3; }
-  .story-gallery figure:hover { transform: translateY(-6px) rotate(0deg); }
-  .story-gallery img { width: 100%; display: block; cursor: zoom-in; }
-
-  /* LIGHTBOX */
-  .lightbox {
-    position: fixed; inset: 0; z-index: 1000;
-    background: rgba(8,17,32,0.88);
-    display: flex; align-items: center; justify-content: center;
-    padding: 40px;
-    opacity: 0; visibility: hidden;
-    transition: opacity 0.25s ease;
-  }
-  .lightbox.open { opacity: 1; visibility: visible; }
-  .lightbox img {
-    max-width: min(90vw, 480px); max-height: 88vh;
-    border-radius: 12px;
-    box-shadow: 0 30px 70px -20px rgba(0,0,0,0.6);
-    transform: scale(0.95); transition: transform 0.25s ease;
-  }
-  .lightbox.open img { transform: scale(1); }
-  .lightbox-close {
-    position: absolute; top: 24px; right: 28px;
-    width: 42px; height: 42px; border-radius: 50%;
-    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25);
-    color: var(--white); font-size: 20px; line-height: 1;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer; transition: background 0.2s ease;
-  }
-  .lightbox-close:hover { background: rgba(255,255,255,0.2); }
-  .story-gallery .tag {
-    position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
-    font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700;
-    color: var(--white); background: rgba(14,28,51,0.72);
-    padding: 3px 8px; border-radius: 20px; white-space: nowrap;
-  }
-
-  /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: center; }
-  .about-badge {
-    width: 100%; max-width: 320px;
-    background: var(--white);
-    border: 1px solid var(--border-soft);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 30px 60px -30px rgba(14,28,51,0.3);
-    margin: 0 auto;
-  }
-  .about-badge img { width: 100%; height: auto; display: block; }
-  .about-content p { color: var(--muted); font-size: 16px; margin-bottom: 18px; }
-  .about-content p:last-child { margin-bottom: 0; }
-  .about-content strong { color: var(--navy); }
-
-  /* CONTACT */
-  .contact-section { background: var(--navy-deep); position: relative; overflow: hidden; }
-  .contact-section::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 60% at 85% 20%, rgba(198,154,92,0.12) 0%, transparent 60%);
-  }
-  .contact-inner { position: relative; z-index: 1; max-width: 640px; }
-  .contact-section .section-title { color: var(--white); }
-  .contact-section p.lede { color: var(--muted-light); font-size: 17px; margin-bottom: 40px; max-width: 540px; }
-  .contact-email {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(20px, 2.6vw, 26px);
-    color: var(--brass-light);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 4px;
-    transition: color 0.25s ease, border-color 0.25s ease;
-  }
-  .contact-email:hover { color: var(--white); border-color: var(--brass-light); }
-  .contact-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: 36px; }
-
-  /* FOOTER */
-  footer {
-    background: var(--navy-deep);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 40px 0;
-  }
-  .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-  .footer-logo { display: flex; align-items: center; gap: 10px; }
-  .footer-logo img { height: 30px; width: 30px; opacity: 0.85; }
-  .footer-logo span { color: var(--muted-light); font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 600; }
-  .footer-meta { color: rgba(250,248,244,0.4); font-size: 13px; }
-  .footer-meta a { color: rgba(250,248,244,0.55); text-decoration: none; }
-  .footer-meta a:hover { color: var(--brass-light); }
-
-  /* SCROLL REVEAL */
-  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16,1,0.3,1); }
-  .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-  @media (max-width: 880px) {
-    .nav-links, .nav-cta { display: none; }
-    .hero { padding-top: 110px; }
-    .stat-strip { grid-template-columns: 1fr; }
-    .services-grid { grid-template-columns: 1fr; }
-    .who-grid { grid-template-columns: 1fr 1fr; }
-    .pricing-top { grid-template-columns: 1fr; gap: 32px; }
-    .tier-grid { grid-template-columns: 1fr; }
-    .about-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; }
-    .story-card { flex-direction: column; text-align: center; }
-    .story-info { justify-content: center; }
-    .story-stats { justify-content: center; }
-    .story-gallery { margin: 20px auto 0; }
-    .process-item { grid-template-columns: 56px 1fr; }
-    .process-step { font-size: 28px; }
-    section { padding: 76px 0; }
-    .footer-inner { flex-direction: column; text-align: center; }
-  }
-  @media (max-width: 560px) {
-    .who-grid { grid-template-columns: 1fr; }
-  }
-</style>
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<nav>
-  <a href="#home" class="nav-logo">
+<nav class="site-nav">
+  <a href="/" class="nav-logo">
     <img src="assets/logo-navy.png" alt="JG Market Solutions logo">
     <span class="nav-logo-text">JG Market<br>Solutions</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#what-i-do">Services</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#pricing">Pricing</a></li>
-    <li><a href="#results">Client Stories</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="results.html">Results</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-cta">Get In Touch</a>
+  <a href="contact.html" class="nav-cta">Get In Touch</a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
+<div class="mobile-menu">
+  <a href="services.html">Services</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="results.html">Results</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary menu-cta">Get In Touch</a>
+</div>
 
 <section class="hero" id="home">
   <img src="assets/logo-gold.png" alt="" class="hero-watermark">
   <div class="hero-inner">
-    <span class="eyebrow">Social Media Marketing & Advertising</span>
+    <span class="eyebrow">Social Media Marketing &amp; Advertising</span>
     <h1>Ads that bring in<br><em>real</em> customers.</h1>
     <p class="lede">Social media marketing and advertising for businesses everywhere. Ad creative, account setup, campaign management, and constant optimization, all handled personally, start to finish.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Get In Touch</a>
-      <a href="#process" class="btn btn-ghost">See How It Works</a>
+      <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+      <a href="services.html" class="btn btn-ghost">See How It Works</a>
     </div>
   </div>
   <div class="stat-strip fade-up">
@@ -460,7 +62,7 @@
       <div class="stat-label">Daily walk-in customers</div>
     </div>
   </div>
-  <p class="stat-caption">Real numbers from a coffee shop in Boca Raton. Nothing rounded up.</p>
+  <p class="stat-caption">Real numbers from a gourmet market in Boca Raton. Nothing rounded up. <a class="text-link" style="color:var(--brass-light);" href="results.html">See the full story</a></p>
 </section>
 
 <section id="what-i-do">
@@ -479,7 +81,7 @@
       <div class="service-card fade-up">
         <div class="service-num">02</div>
         <h3>Ad Creative</h3>
-        <p>Ads get built from a mix of your existing content and new content created from scratch, turned into reels, static posts, and carousel posts built to fit your brand and stop the scroll.</p>
+        <p>Ads get built from a mix of your existing content and new content created from scratch, turned into reels, static posts, and carousels built to fit your brand and stop the scroll.</p>
       </div>
       <div class="service-card fade-up">
         <div class="service-num">03</div>
@@ -497,10 +99,13 @@
         <p>More budget goes toward what's working, what isn't gets cut, and ad spend scales up steadily without losing efficiency.</p>
       </div>
     </div>
+    <div class="section-more fade-up">
+      <a href="services.html" class="text-link">See the full breakdown of every service →</a>
+    </div>
   </div>
 </section>
 
-<section class="who-section" id="who">
+<section class="who-section on-dark" id="who">
   <div class="wrap">
     <div class="section-head fade-up">
       <span class="eyebrow">Who This Is For</span>
@@ -518,60 +123,12 @@
   </div>
 </section>
 
-<section id="process">
-  <div class="wrap">
-    <div class="section-head fade-up">
-      <span class="eyebrow">Process</span>
-      <h2 class="section-title">How it works</h2>
-    </div>
-    <div class="process-list">
-      <div class="process-item fade-up">
-        <div class="process-step">01</div>
-        <div>
-          <h3>The conversation</h3>
-          <p>A real conversation about your business, not a sales pitch. Understanding what your business does comes before any advertising strategy.</p>
-        </div>
-      </div>
-      <div class="process-item fade-up">
-        <div class="process-step">02</div>
-        <div>
-          <h3>Campaign Setup</h3>
-          <p>Accounts get linked, ad creative gets selected, budget gets set, and the campaign goes live, all built with clean structure and tracking from day one so every dollar spent can be measured.</p>
-        </div>
-      </div>
-      <div class="process-item fade-up">
-        <div class="process-step">03</div>
-        <div>
-          <h3>Creative Testing</h3>
-          <p>Campaigns start with a wider variety of ads, then get filtered down to whatever's actually performing, so decisions about what to scale are based on real data, not guesses.</p>
-        </div>
-      </div>
-      <div class="process-item fade-up">
-        <div class="process-step">04</div>
-        <div>
-          <h3>Optimization</h3>
-          <p>Budget gets tracked closely, and results get reported back so the best-performing ads get more of the spend.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="pricing-section" id="pricing">
   <div class="wrap">
     <div class="section-head fade-up">
       <span class="eyebrow">Pricing</span>
       <h2 class="section-title">Straightforward pricing</h2>
-    </div>
-    <div class="pricing-top fade-up">
-      <div>
-        <p>$350 a month, flat.</p>
-        <p>For ecommerce and other businesses where sales can be tracked directly through the pixel, a percentage of sales is sometimes an option instead, once the ads are proven to be worth more than the flat fee.</p>
-      </div>
-      <div class="pricing-highlight">
-        <div class="tier-name">Ad Spend</div>
-        <div class="desc">Billed separately from the management fee, directly to your own ad accounts. Exact numbers vary by goals and platform, and get discussed up front before anything launches.</div>
-      </div>
+      <p class="section-lede">One flat monthly fee covers everything — creative, setup, management, and optimization. Ad spend is separate and always goes directly to your own accounts.</p>
     </div>
     <div class="tier-grid">
       <div class="tier-card fade-up">
@@ -594,7 +151,9 @@
         <div class="tier-save">Save $450 vs. month-to-month</div>
       </div>
     </div>
-    <p class="pricing-footnote fade-up">Multi-month rates apply to the management fee only. Ad spend is always paid separately, directly to your own ad accounts.</p>
+    <div class="section-more fade-up">
+      <a href="pricing.html" class="text-link">Full pricing details &amp; common questions →</a>
+    </div>
   </div>
 </section>
 
@@ -642,7 +201,9 @@
         </figure>
       </div>
     </div>
-    <p class="story-note fade-up">More client stories get added here as new results come in.</p>
+    <div class="section-more fade-up">
+      <a href="results.html" class="text-link">Read the full Belladukes story →</a>
+    </div>
   </div>
 </section>
 
@@ -657,12 +218,13 @@
         <h2 class="section-title">One person, start to finish.</h2>
         <p><strong>JG Market Solutions</strong> is run by <strong style="color:var(--brass);">Joe Gardiner</strong>. Every ad, every account, every post handled directly.</p>
         <p>Working with JG Market Solutions means working directly with the person actually doing the work, every step of the way.</p>
+        <p><a href="about.html" class="text-link">More about Joe →</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="contact-section" id="contact">
+<section class="contact-section on-dark" id="contact">
   <div class="wrap">
     <div class="contact-inner">
       <span class="eyebrow">Get In Touch</span>
@@ -682,7 +244,14 @@
       <img src="assets/logo-white.png" alt="JG Market Solutions">
       <span>JG Market Solutions</span>
     </div>
-    <div class="footer-meta"><a href="mailto:joe@jgmarketsolutions.com">joe@jgmarketsolutions.com</a> &nbsp;·&nbsp; © 2026</div>
+    <ul class="footer-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-meta"><a href="mailto:joe@jgmarketsolutions.com">joe@jgmarketsolutions.com</a> &nbsp;·&nbsp; © <span class="js-year">2026</span></div>
   </div>
 </footer>
 
@@ -691,34 +260,6 @@
   <img id="lightbox-img" src="" alt="">
 </div>
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  function openLightbox(src, alt) {
-    lightboxImg.src = src;
-    lightboxImg.alt = alt || '';
-    lightbox.classList.add('open');
-  }
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-  }
-  document.querySelectorAll('.story-gallery img').forEach(img => {
-    img.addEventListener('click', () => openLightbox(img.src, img.alt));
-  });
-  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
-</script>
-
+<script src="assets/main.js"></script>
 </body>
 </html>
