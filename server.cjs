@@ -16,7 +16,9 @@ const TYPES = {
 };
 
 http.createServer((req, res) => {
-  let p = decodeURIComponent((req.url || "/").split("?")[0]);
+  let p;
+  try { p = decodeURIComponent((req.url || "/").split("?")[0]); }
+  catch { res.writeHead(400); return res.end("bad request"); }
   if (p.endsWith("/")) p += "index.html";
   const file = path.normalize(path.join(ROOT, p));
   if (!file.startsWith(ROOT)) { res.writeHead(403); return res.end(); }
